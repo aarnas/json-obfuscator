@@ -5,12 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "example": "node index.js --inputPath=example/example.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "yargs": "^17.1.0"
+  },
   "devDependencies": {
     "prettier": "2.3.2"
   }

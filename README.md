@@ -90,33 +90,23 @@ In addition to the main functionality, process generates a replacement mapping f
 To run application type npm start with input file path, for example:
 
 ```bash
-npm start example/example.json
+node index.js --inputPath=example/example.json
 ```
 
-To run application with custom mapper name, add mapper name as next parameter:
+To run application with custom mapper name, add mapper name as parameter:
 
 ```bash
-npm start example/example.json mapperCustomName
+node index.js --inputPath=example/example.json --mapperName=mapping
 ```
 
-To save result as file ( default is console.log ) add next parameter as path to output file:
+To save result as file ( default is console.log ) add path to output file parameter:
 
 ```bash
-npm start example/example.json mapperCustomName output/result.json
-```
-
-To save result as file and skip mapper file naming, use - instead of mapper name param to skip it:
-
-```bash
-npm start example/example.json - output/result.json
+node index.js --inputPath=example/example.json --outputPath=output/result.json
 ```
 
 ## Extra 
-To format code. First, install packages:
-```bash
-npm install
-```
-Then run format command for all files:
+To format code. Run format command for all files:
 ```bash
 npx prettier --write .
 ```
